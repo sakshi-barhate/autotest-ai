@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:8000"
+const API_URL = "https://autotest-ai-h360.onrender.com"
 
 export async function generateTests(sourceCode) {
   const response = await fetch(`${API_URL}/generate-tests`, {
