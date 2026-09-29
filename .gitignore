@@ -1,4 +1,12 @@
-.env
 venv/
 __pycache__/
 *.pyc
+.env
+.coverage
+.pytest_cache/
+
+node_modules/
+dist/
+
+backend/generated_tests/*.py
+backend/.coverage
