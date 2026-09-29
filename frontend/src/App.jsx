@@ -15,7 +15,6 @@ function App() {
     setError(null)
 
     const genResult = await generateTests(code)
-    console.log("genResult:", genResult)
 
     if (genResult.error) {
       setError(genResult.error)
@@ -26,7 +25,6 @@ function App() {
     setTestData(genResult.test_data)
 
     const covResult = await runCoverage(code)
-    console.log("covResult:", covResult)
 
     if (covResult.error) {
       setError(covResult.error)
@@ -36,7 +34,6 @@ function App() {
 
     setCoverage(covResult)
     setLoading(false)
-    console.log("Done - loading set to false")
   }
 
   const handleTrySample = () => {
